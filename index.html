@@ -19,13 +19,13 @@
                 <!-- <a class="href mental-adi"> </a> -->
                 <!-- <a class="href mental-anu"> </a> -->
                 <a class="href atma"> </a>
-<!--                 <a class="href atma-atma"> </a>
+                <!--                 <a class="href atma-atma"> </a>
                 <a class="href atma-buddhi"> </a>
                 <a class="href atma-mental"> </a>
                 <a class="href atma-astral"> </a>
                 <a class="href atma-physic"> </a> -->
                 <a class="href buddhi"> </a>
-<!--                 <a class="href buddhi-atma"> </a>
+                <!--                 <a class="href buddhi-atma"> </a>
                 <a class="href buddhi-buddhi"> </a>
                 <a class="href buddhi-mental"> </a>
                 <a class="href buddhi-astral"> </a>
@@ -51,7 +51,6 @@
             </div>
         </div>
         <div class="block-of-explanations">
-            <a class="close-block-of-explanation"> </a>
             <div class="explanation explanation-start">
                 <h4>СЕМЬ ПЛАНОВ. ИНТЕРАКТИВ ОТ LUCIOS COOP.</h4>
                 <p></p>
@@ -118,7 +117,7 @@
             </div>
             <div class="explanation">
                 <h4>Атмический подплан ментального плана.</h4>
-                <p>Церемония посвящения  происходит на трех высших подпланах ментального плана и на трех высших планах в  соответствии с посвящением.</p>
+                <p>Церемония посвящения происходит на трех высших подпланах ментального плана и на трех высших планах в соответствии с посвящением.</p>
             </div>
             <div class="explanation">
                 <h4>Буддхический подплан ментального плана.</h4>
@@ -128,9 +127,9 @@
                 <!-- trita.net/books-alice-bailey/01-initiation-human-and-solar/aab-01-page-0081-0093.html#89 -->
                 <p>... только здесь и сейчас человек может подготовиться к посвящению, и он готовится не тем, что размышляет о церемониальном аспекте, как делают очень многие во взволнованном ожидании, а систематически и упорно работая над развитием ментального тела, настойчиво и энергично стараясь взять под контроль астральное тело, так чтобы оно стало отзывчивым к трем вибрациям: </p>
                 <ul>
-                <li>а. Вибрации Эго. </li>
-                <li>б. Вибрации Учителя.</li>
-                <li>в. Вибрациям его братьев повсюду. </li>
+                    <li>а. Вибрации Эго. </li>
+                    <li>б. Вибрации Учителя.</li>
+                    <li>в. Вибрациям его братьев повсюду. </li>
                 </ul>
                 <p>Он становится <em>восприимчивым</em> к голосу своего высшего “Я”, тем самым отрабатывая карму под разумным руководством своего собственного Эго. </p>
                 <!-- trita.net/books-alice-bailey/01-initiation-human-and-solar/aab-01-page-0081-0093.html#93 -->
@@ -206,12 +205,13 @@
         --plans-height: 18.9cqw;
         --pod-plans-left: 36.9cqw;
         /*--pod-plans-width: 30.6cqw;*/
-        --love-colors: #b10f9d;;
+        --love-colors: #b10f9d;
+        ;
         --will-colors: #9d00ff;
-
-
     }
+
     body {
+        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -219,7 +219,6 @@
     }
 
     .installation {
-        background-image: url(color-background-3.jpg);
         background-size: cover;
         display: flex;
         flex-direction: row;
@@ -232,7 +231,6 @@
         border: 1px solid lightgray;
         border-right: 0;
     }
-
 
     img {
         width: inherit;
@@ -249,8 +247,6 @@
         opacity: 0;
         transition: all 0.3s;
     }
-
-
 
     .href:hover {
         cursor: pointer;
@@ -325,7 +321,7 @@
         background-color: var(--will-colors);
     }
 
-        /* БУДДХИЧЕСКИЙ ПЛАН */
+    /* БУДДХИЧЕСКИЙ ПЛАН */
     .buddhi {
         width: 30.7cqw;
         height: 18.9cqw;
@@ -457,9 +453,9 @@
     }
 
     .astral-astral {
-width: 55.1cqw;
-    height: 2.8cqw;
-    top: 119.15cqw;
+        width: 55.1cqw;
+        height: 2.8cqw;
+        top: 119.15cqw;
         left: var(--pod-plans-left);
         background-color: var(--love-colors);
     }
@@ -537,7 +533,7 @@ width: 55.1cqw;
     }
 
     .block-of-explanations::-webkit-scrollbar {
-      width: 0;
+        width: 0;
     }
 
     .explanation {
@@ -549,36 +545,23 @@ width: 55.1cqw;
         display: block;
     }
 
-    .close-block-of-explanation {
-        display: none;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        font-size: 16px;
-        height: 30px;
-        width: 30px;
-        border-radius: 50%;
-        background: #ff427e;
-        opacity: 0.5;
-        text-align: center;
-    }
-
     @media screen and (max-width: 767px) {
         .block-of-explanations {
             background-image: url(color-background-3.jpg);
             background-size: cover;
-            display: none;
-            position: absolute;
             top: 60px;
             width: 100%;
-            height: 100%;
+            min-height: 100%;
         }
 
-        .close-block-of-explanation {
-            display: block
+        .installation {
+            flex-direction: column;
         }
 
-        ;
+        .container-of-interactive {
+            width: 100%;
+        }
+    }
     </style>
 </body>
 <script src="explanations.js?v=2"></script>
