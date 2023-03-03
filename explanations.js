@@ -38,6 +38,31 @@ const intelligence_of_physic = [
 
 ]
 
-wisdom = (plan) => explanation_block.innerHTML = '<div class="explanation">' + '<p> Всего: ' + plan.length + '</p>' + plan[Math.floor(0 + Math.random() * (plan.length - 0))] + '</div>'
+/*
+При получении в функцию аргумента (название плана)
+генерируем случайное число и вставляем фрагмент из массива, соотв. этому числу.
+Устанавливаем в ссылку на массив в переменную first_wisdom
+*/
+
+let first_wisdom_number
+let first_wisdom
+
+function wisdom (plan) {
+	if ( plan.length > 0 ) {
+	first_wisdom_number = Math.floor(Math.random() * (plan.length));
+	explanation_block.innerHTML = '<div class="explanation">' + '<p> Всего: ' + plan.length + '. Сейчас: ' + (first_wisdom_number + 1) + '</p>' + plan[first_wisdom_number] + '</div>'
+	first_wisdom = plan
+}}
+
+let input = document.querySelector('input')
+
+input.oninput = function() {
+	if (!isNaN(parseFloat(input.value)) && isFinite(input.value) && first_wisdom.length) {
+		if ( input.value <= first_wisdom.length && input.value > 0 ) {
+			first_wisdom_number = input.value
+			explanation_block.innerHTML = '<div class="explanation">' + '<p> Всего: ' + first_wisdom.length + '. Сейчас: ' + first_wisdom_number + '</p>' + '</p>' + first_wisdom[(input.value - 1)] + '</div>'
+		}
+	}
+}
 
 
