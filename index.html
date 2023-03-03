@@ -32,7 +32,7 @@
                 <a class="href buddhi-physic"> </a> -->
                 <a class="href mental" onclick="wisdom(intelligence_of_mental)"> </a>
                 <a class="href mental-atma"> </a>
-                <a class="href mental-buddhi" onclick="wisdom(intelligence_of_mental_buddhi)"> </a> 
+                <a class="href mental-buddhi" onclick="wisdom(intelligence_of_mental_buddhi)"> </a>
                 <a class="href mental-mental"> </a>
                 <a class="href mental-astral"> </a>
                 <a class="href mental-physic"> </a>
@@ -51,15 +51,15 @@
             </div>
         </div>
         <div class="block-of-explanations">
-            <div class="explanation explanation-start">
-                <h4>СЕМЬ ПЛАНОВ. ИНТЕРАКТИВ ОТ LUCIOS COOP.</h4>
+            <div class="search-panel">
+                <form>
+                    <input type="text" name="text" class="search">
+                    <input type="submit" name="submit" class="submit" value="Search">
+                </form>
             </div>
-            <div class="explanation">
-                <h4>Буддхический подплан ментального плана.</h4>
-
-                
-            </div>
+            <div class="explanation-block"></div>
         </div>
+    </div>
     </div>
     <style type="text/css">
     :root {
@@ -80,6 +80,10 @@
         flex-direction: column;
         align-items: center;
         min-height: 100vh;
+    }
+
+    .search-panel {
+        padding: 15px;
     }
 
     .installation {
@@ -399,6 +403,8 @@
         overflow: overlay;
         display: flex;
         max-height: 745.86px;
+        display: flex;
+        flex-direction: column;
     }
 
     .block-of-explanations::-webkit-scrollbar {
@@ -432,6 +438,6 @@
 </body>
 <script src="explanations.js?v=2"></script>
 <script type="text/javascript">
-
 </script>
+
 </html>
