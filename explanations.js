@@ -51,7 +51,7 @@ let first_wisdom
 function wisdom (plan) {
 	if ( plan.length > 0 ) {
 	first_wisdom_number = Math.floor(Math.random() * (plan.length));
-	explanation_block.innerHTML = '<div class="explanation">' + '<p> Всего: ' + plan.length + '. Сейчас: ' + (first_wisdom_number + 1) + '</p>' + plan[first_wisdom_number] + '</div>'
+	explanation_block.innerHTML = '<div class="explanation">' + '<p class="numbers"> Всего: ' + plan.length + '. Сейчас: ' + (first_wisdom_number + 1) + '</p>' + plan[first_wisdom_number] + '</div>'
 	first_wisdom = plan
 }}
 
@@ -61,7 +61,7 @@ input.oninput = function() {
 	if (!isNaN(parseFloat(input.value)) && isFinite(input.value) && first_wisdom.length) {
 		if ( input.value <= first_wisdom.length && input.value > 0 ) {
 			first_wisdom_number = input.value
-			explanation_block.innerHTML = '<div class="explanation">' + '<p> Всего: ' + first_wisdom.length + '. Сейчас: ' + first_wisdom_number + '</p>' + '</p>' + first_wisdom[(input.value - 1)] + '</div>'
+			explanation_block.innerHTML = '<div class="explanation">' + '<p class="numbers"> Всего: ' + first_wisdom.length + '. Сейчас: ' + first_wisdom_number + '</p>' + '</p>' + first_wisdom[(input.value - 1)] + '</div>'
 		}
 	}
 }
