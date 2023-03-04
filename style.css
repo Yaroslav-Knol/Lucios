@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
     :root {
         /* Отступы для планов */
         --plans-left: 6.3cqw;
@@ -15,6 +17,18 @@
         flex-direction: column;
         align-items: center;
         min-height: 100vh;
+        font-family: Roboto;
+    }
+
+    .top {
+        background-color: #FFF8F5;
+        width: min(100%, 1300px);
+        margin: 0;
+        color: gray;
+    }
+
+    .top p {
+        margin: 10px;
     }
 
     .search-panel {
