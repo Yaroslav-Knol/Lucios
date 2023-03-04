@@ -347,7 +347,7 @@
     }
 
     .explanation {
-        padding: 20px;
+        padding: 10px 20px;
     }
 
     .explanation.explanation-start {
@@ -366,6 +366,11 @@
         padding: 13px;
     }
 
+    .numbers {
+       margin-top: 0;
+        border-bottom: 1px solid #bbb4a5bf; 
+    }
+    
     @media screen and (max-width: 767px) {
         .block-of-explanations {
             top: 60px;
