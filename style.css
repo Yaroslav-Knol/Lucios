@@ -354,6 +354,18 @@
         display: block;
     }
 
+    .sutra {
+        border: 1px solid #bbb4a5bf;
+        background-color: #fff7e6bf;
+        padding: 13px;
+    }
+
+    .source {
+        border-top: 1px solid #bbb4a5bf;
+        text-align: right;
+        padding: 13px;
+    }
+
     @media screen and (max-width: 767px) {
         .block-of-explanations {
             top: 60px;
