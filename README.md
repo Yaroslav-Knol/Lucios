@@ -5,10 +5,6 @@ Interactive picture for learning the Ageless Wisdom. Schematics obtained from bo
 What is planned:
 1. Ability to select an area and get information about that area. Intelligence is taken from the books of Alice Bailey, and those works of the Hierarchy that transferred through Maitreya.
 2. App issue "random" intelligece from database to a special block.
-3. It's will be interesting in future.
-
-Feedback:
-https://forms.gle/5x95K7Xmacq6LnzK8
 
 # Люциос
 
@@ -17,7 +13,3 @@ https://forms.gle/5x95K7Xmacq6LnzK8
 Что планируется:
 1. Возможность выбирать область и получать сведения об этой области. Сами сведения берутся из книг Алисы Бейли и тех трудов Иерархии, что переданы через Майтрейю Люциоса.
 2. Приложение выдаёт "случайный" фрагмент из базы данных со ссылкой на источник.
-3. Это будет интересно в будущем.
-
-Обратная связь:
-https://forms.gle/5x95K7Xmacq6LnzK8
